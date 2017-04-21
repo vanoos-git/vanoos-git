@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js" data-semver="1.0.7"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js"></script>
+
+
+
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <div class="container">
+      <div class="hero-unit">
+        <h4>Angular Firebase</h4>
+
+        <ul>
+          <li ng-repeat="item in items"><button ng-click="deleteItem(k)">delete</button> - {{item.info}}</li>
+        </ul>
+        <div>
+          <input type=text ng-model="newItem.text" />
+          <button ng-click="addNewItem()">Add Item</button>
+          <button ng-click="removeAll()">Remove All</button>
+        </div>
+        <hr>
+        {{items | json}}
+      </div>
+    </div>
+  </body>
+
+</html>
