@@ -1,0 +1,434 @@
+html {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'OpenSans', Fallback, sans-serif;
+}
+
+#pop1 {
+  opacity: 0;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  background-color: #39c9da;
+  vertical-align: middle;
+  clear: both;
+}
+
+header {
+  background-image: url(images/road_s.jpg);
+  background-position: bottom;
+  position: relative;
+  text-align: center;
+  height: 580px;
+  background-size: cover;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+img.chsize {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  height: 5%;
+  padding: 1%;
+  background-color: #39c9da;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.htext {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 504px;
+  max-height: 69px;
+  padding-top: 260px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background-color: #f6f6f6;
+}
+
+.aboutus {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio {
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.services {
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.contactus {
+  max-width: 1200px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 60px;
+  padding-bottom: 147px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactus, .portfolio {
+  background-color: #f6f6f6;
+}
+
+.my-flex-container {
+  display: flex;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  ;
+  justify-content: center;
+}
+
+.cblock {
+  max-width: 571px;
+  height: 65%;
+  margin: 1%;
+}
+
+.text {
+  padding-top: 29px;
+  padding-bottom: 26px;
+  color: #a8a8a8;
+}
+
+.fblock {
+  max-width: 272px;
+  max-height: 299px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.img {
+  padding-top: 28px;
+  padding-bottom: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.caption {
+  font-weight: bold;
+  color: #504f50;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.ftext {
+  padding-top: 33px;
+  color: #504f50;
+  display: block;
+  text-align: center;
+}
+
+button.fbutton {
+  margin: 30px auto;
+  max-width: 130px;
+  max-height: 35px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button:enabled {
+  background-color: #4b4a4b;
+  color: #fff;
+}
+
+button:disabled {
+  background-color: #b1b5bc;
+  color: #9ca1a8;
+}
+
+.b-popup {
+  border: 2px solid rgba(197, 192, 192, .7);
+  overflow: scroll;
+  border-radius: 14px;
+  margin: 0;
+  padding: 3%;
+  max-width: 90vw;
+  max-height: 90vh;
+  min-height: 20vh;
+  left: 5vw;
+  right: 5vw;
+  position: fixed;
+  top: 10vh;
+  z-index: 999;
+  color: #fff;
+  background-color: #39c9da;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 2em
+}
+
+.hide-layout {
+  background: #000;
+  /* фон */
+  bottom: 0;
+  /* координата снизу */
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  /* прозрачность для IE */
+  height: 100%;
+  /* высота на всю страницу */
+  opacity: 0.5;
+  /* прозрачность слоя */
+  position: fixed;
+  /* фиксируем элемент на странице*/
+  top: 0;
+  /* координата сверху */
+  width: 100%;
+  /* ширина на всю страницу */
+  z-index: 998;
+  /* z-index для перекрытия остальных элементов */
+}
+
+.fimg {
+  width: 370px;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.fcaption {
+  position: relative;
+  left: 0;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  color: #504f50;
+  text-transform: uppercase;
+}
+
+.fcaption2 {
+  position: relative;
+  bottom: 40px;
+  right: 5%;
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  color: #aba7ab;
+}
+
+h3 {
+  font-family: 'Open Sans Bold';
+  color: #505256;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h5 {
+  color: #505256;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  width: 60%;
+  margin: 0 auto;
+  color: #a8a8a8;
+  text-align: center;
+}
+
+.row {
+  display: inline-block;
+  padding-top: 30px;
+  width: 100%;
+}
+
+input {
+  color: #a8a8a8;
+  max-height: 45px;
+  border: 0;
+  padding: 1%;
+  font-size: 14px;
+}
+
+input.txt1 {
+  width: 45%;
+  margin: 1%;
+  padding: 1%;
+}
+
+input.txt {
+  width: 93%;
+  padding: 1%;
+}
+
+textarea {
+  border: 0;
+  width: 93%;
+  padding: 1%;
+  min-height: 100px;
+}
+
+.bc {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#dmenu {
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 1000px;
+  z-index: 1000;
+}
+
+#menu {
+  position: absolute;
+  right: -80%;
+  text-align: left;
+  min-width: 20vw;
+  max-width: 80vw;
+  padding: 1%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#menu ul {
+  margin: 5px;
+  padding: 0%;
+  width: inherit;
+}
+
+#menu ul li {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 1%;
+  background-color: #39c9da;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+#nav-icon1 {
+  width: 4%;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #39c9da;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 16px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 32px;
+}
+
+.inpList {
+  width: 50%;
+  float: left;
+  white-space: normal;
+}
+
+.textField {
+  width: 50%;
+  float: right;
+  white-space: normal;
+}
+
+input.ptxt {
+  display: block;
+  width: 90%;
+  margin: 0 0 3% 0;
+  padding: 1%;
+}
+
+.buttList {
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+#pop1 {
+  opacity: 0;
+}

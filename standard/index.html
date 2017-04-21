@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/fastfonts.js">
+    loadFont('OpenSans', 'fonts/opensans.css', 'fonts/opensans2.css');
+  </script>
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+  <script src="js/loadCSS.js"></script>
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <script id="loadcss">
+    loadCSS("style.css", document.getElementById("loadcss"));
+  </script>
+  <script defer src="js/jquery-3.1.1.min.js"></script>
+  <script defer src="js/handlebars-v4.0.5.js"></script>
+  <script async src="js/mycode/code.js"></script>
+  <title>UIBrush.</title>
+</head>
+
+<body>
+  <header id="myHeader">
+    <div id=dmenu>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="menu">
+        <ul>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="htext">
+      <h1>THE ULTIMATE COLLECTION OF  FREE PSD TEMPLATES!!</h1>
+        <a href="#" id="left" class="button"><<</a>
+      <a href="#" id="download" class="button">download</a>
+      <a href="#" id="right" class="button">>></a>
+    </div><br>
+
+  </header>
+
+  <div opacity='0' id="pop1" class="b-popup">
+    <div class="inpList">
+      <input id="inpName" class="ptxt" type="text" placeholder="Name" />
+      <input id="inpEmail" class="ptxt" type="text" placeholder="E-mail" />
+      <input class="ptxt" type="text" placeholder="Comment" />
+    </div>
+    <div class="textField">
+      <div id="txtf">
+        In the first field, type a name without numbers or some symbols.<br> In the second field, type an valid E mail. <br> In the third field, type a comment.<br>
+      </div>
+      <div class="buttList">
+        <a href="#" id="psubmit" class="button">Submit</a>
+        <a href="#" id="pforget" class="button">Forget</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="aboutus" class="aboutus" tabindex="-1">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non #5</p>
+    <div class="my-flex-container">
+      <div class="cblock">
+        <img class="chsize" alt="car" src="images/car.png">
+      </div>
+      <div class="cblock">
+        <h5>Lorem ipsum dolor sit amet adipisicing elit.</h5>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+          consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        </div>
+        <a href="#" class="button">get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="portfolio" class="portfolio" tabindex="-1">
+      <h3>portfolio</h3>
+      <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non #5</p><br>
+      <div class="my-flex-container" id="flex">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services" tabindex="-1">
+    <h3>services</h3>
+    <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non #5</p>
+
+    <script id="template" type="text/x-handlebars-template">
+      <div class="my-flex-container">
+        {{#each services}}
+        <div class="fblock">
+          <img class="img" alt="photograpy" src={{src}} />
+          <div class="caption">{{caption}}</div>
+          <div class="ftext">{{ftext}}</div>
+          <button id="info" disabled data-num={{@index}} class="fbutton">Read More</button>
+        </div>
+        {{/each}}
+      </div>
+    </script>
+
+    <script id="ShowJson" type="text/x-handlebars-template">
+      <div id='bp' class="b-popup">
+        {{info}}
+      </div>
+    </script>
+
+
+  </div>
+  <div class="container">
+    <div id="contactus" class="contactus" tabindex="-1">
+      <h3>contact us</h3>
+      <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+      <div class="my-flex-container">
+        <div class="cblock">
+          <h5>contact info</h5>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </div>
+          <h5>address</h5>
+          <div class="text">
+            1931 Dawson Drive,<br> 15th Avenue, <br>Little Rock, AR 72211
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer src="js/mycode/code2.js"></script>
+  <script defer src="js/mycode/code3.js"></script>
+  <script defer src="js/mycode/code4.js"></script>
+  <footer>Copyright © 2014 UIBrush.</footer>
+  <div id="hl" class="hide-layout" hidden="true"></div>
+</body>
+
+</html>
